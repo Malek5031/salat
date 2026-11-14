@@ -1,0 +1,13 @@
+SALATY TV WEB V1.1 — MODE HORS CONNEXION
+
+1. Décompressez le ZIP. Sur Windows, ouvrez index.html : le mode hors connexion fonctionne pour les fichiers locaux, tant que le navigateur conserve son stockage local.
+2. Dans les paramètres, renseignez la mosquée, la ville, la localisation et les décalages d’Iqama.
+3. Connectez Internet, puis cliquez sur « Précharger 12 mois ». Attendez le bilan de téléchargement.
+4. Coupez Internet : l'horloge, les horaires téléchargés et les comptes à rebours continuent de fonctionner.
+5. Les horaires d'un jour non téléchargé utilisent les horaires MANUELS DE SECOURS, identiques chaque jour : ils doivent être vérifiés et ne remplacent pas un calendrier réel.
+
+POUR SMART TV : publier les fichiers sur un site HTTPS (GitHub Pages par exemple), ouvrir la page au moins une fois avec Internet. Le service worker met en cache les fichiers d'application pour ouverture hors ligne, SOUS RÉSERVE que le navigateur TV prenne en charge les service workers et conserve les données. L'ouverture directe d'un fichier HTML depuis USB peut fonctionner sur certains navigateurs, mais pas sur tous. Le lancement automatique au démarrage du téléviseur n'est pas garanti.
+
+IMPORTANT : Les horaires sont calculés par AlAdhan pendant le préchargement ; le fonctionnement hors ligne utilise la copie locale. Vérifiez les horaires et la méthode avec la mosquée avant utilisation. La date et l'heure du téléviseur doivent être exactes. Le stockage local peut être effacé par le navigateur ou le téléviseur ; dans ce cas il faut resynchroniser. Pour plusieurs années, renouveler le préchargement. Aucun test sur TV réelle effectué.
+
+© 2026 Habib Malek
