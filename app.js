@@ -1,7 +1,7 @@
 'use strict';
 const KEYS=['Fajr','Sunrise','Dhuhr','Asr','Maghrib','Isha'];
 const AR=['الفجر','الشروق','الظهر','العصر','المغرب','العشاء'];
-const DEFAULT={mosque:'مسجدي',city:'تونس',lat:36.8065,lon:10.1815,timezone:'Africa/Tunis',method:18,school:0,hijriShift:0,iq:[20,0,15,15,10,15],manual:['05:00','06:30','12:15','15:30','17:30','19:00']};
+const DEFAULT={mosque:'مسجدي',city:'المنستير',lat:35.7643,lon:10.8113,timezone:'Africa/Tunis',method:18,school:0,hijriShift:0,iq:[20,0,15,15,10,15],manual:['05:00','06:30','12:15','15:30','17:30','19:00']};
 const $=id=>document.getElementById(id);
 function getSettings(){try{const v=JSON.parse(localStorage.getItem('salatySettings')||'{}');return {...DEFAULT,...v,iq:Array.isArray(v.iq)&&v.iq.length===6?v.iq:DEFAULT.iq,manual:Array.isArray(v.manual)&&v.manual.length===6?v.manual:DEFAULT.manual};}catch{return {...DEFAULT}}}
 let cfg=getSettings(),calendar={},source='manual',lastDay='',times=cfg.manual.slice(),syncing=false;
